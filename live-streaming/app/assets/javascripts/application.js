@@ -17,4 +17,8 @@
 
 $(document).ready(function() {
 	var source = new EventSource('/stream');
+	source.addEventListener('new_message', function(e) {
+		var message = JSON.parse(e.data);
+		$("#chatbox").append($('<p>').text( message.name + ": " + message.content ));
+	});
 });
