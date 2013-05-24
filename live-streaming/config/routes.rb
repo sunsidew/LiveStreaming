@@ -1,5 +1,6 @@
 LiveStreaming::Application.routes.draw do
   root 'messages#index'
+  post '/messages/create' => 'messages#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
