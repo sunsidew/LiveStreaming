@@ -1,11 +1,16 @@
-<div id = "chatbox">
-</div>
+
+<div id = "container">
+	<h2>루비 코리아 파이팅!</h2>
+
+	<div id = "chatbox">
+	</div>
 
 
-<div>
-	<%= form_tag "/messages/create", method: "post", remote: true do %>
-		<%= text_field_tag :name, nil, placeholder: "이름" %>
-		<%= text_field_tag :content %>
-		<%= submit_tag "전송" %>
-	<% end %>
+	<div>
+		<%= form_tag "/messages/create", method: "post", remote: true do %>
+			<%= text_field_tag :name, nil, placeholder: "이름", id: "name_field" %>
+			<%= text_field_tag :content, nil, id: "content_field" %>
+			<%= submit_tag "전송" %>
+		<% end %>
+	</div>
 </div>

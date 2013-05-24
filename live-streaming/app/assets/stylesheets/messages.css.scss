@@ -1,3 +1,32 @@
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container
+{
+	margin: 0 auto;
+}
+
+#chatbox
+{
+	height: 400px;
+	width: 300px;
+	border: 1px solid;
+	overflow: scroll;
+}
+
+#name_field
+{
+	width: 70px;
+}
+
+#content_field
+{
+	width: 190px;
+}
+
+p
+{
+	margin-left: 10px;
+}
+
